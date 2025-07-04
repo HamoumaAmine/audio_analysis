@@ -19,7 +19,7 @@ def softmax(predictions: dict) -> dict:
 
     output = {}
     for (sentiment, value), exp_val in zip(predictions.items(), exp_values):
-        output[sentiment] = (exp_val / total) * 100
+        output[sentiment] = (exp_val / total) * 10
 
     return output
 
